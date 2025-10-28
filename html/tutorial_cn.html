@@ -66,8 +66,60 @@ figcaption {
 <pre><code class="language-bash">cd ~/Work/rpn_calc
 g++ -std=c++11 rpn_calc.cpp -o rpn_calc
 
-./rpn_calc
+所有支持的操作说明
+四则运算
+加法: + - 将栈顶两个元素相加
+
+减法: - - 将栈顶两个元素相减
+
+乘法: * - 将栈顶两个元素相乘
+
+除法: / - 将栈顶两个元素相除
+
+数字输入
+支持整数和浮点数输入
+
+例如: 5, 3.14, -2.5
+
+错误代码和异常说明
+错误类型
+除零错误: 尝试除以零时触发
+
+栈空错误: 操作时栈中元素不足
+
+格式错误: 输入无法识别的操作符
+
+错误示例
+bash
+输入: 5 0 /
+输出: 错误: 除零错误
+
+输入: +
+输出: 错误: 栈为空
+
+输入: abc
+输出: 错误: 未知操作符 'abc'
+示例输入输出
 </code></pre>
+<pre><code class="nohighlight hljs nim"><span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;示例1: 5 5 +&quot;</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;输出: 结果: 10&quot;</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;示例2: 10 4 - 2 *&quot;</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;输出: 结果: 12&quot;</span>
+
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;示例3: 1 2 + 3 + 7 7 * +&quot;</span>
+<span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;输出: 结果: 55&quot;</span></code></pre><pre class="nb-output">示例1: 5 5 +
+输出: 结果: 10
+示例2: 10 4 - 2 *
+输出: 结果: 12
+示例3: 1 2 + 3 + 7 7 * +
+输出: 结果: 55</pre>
+<p>退出程序
+输入 q 或 quit 退出计算器</p>
+<p>注意事项
+使用空格分隔数字和操作符</p>
+<p>支持连续运算</p>
+<p>自动处理浮点数运算</p>
 </main>
 <footer>
 <div class="nb-box">
@@ -95,8 +147,66 @@ nbText: <span class="hljs-string">&quot;&quot;&quot;
 cd ~/Work/rpn_calc
 g++ -std=c++11 rpn_calc.cpp -o rpn_calc
 
-./rpn_calc
+所有支持的操作说明
+四则运算
+加法: + - 将栈顶两个元素相加
+
+减法: - - 将栈顶两个元素相减
+
+乘法: * - 将栈顶两个元素相乘
+
+除法: / - 将栈顶两个元素相除
+
+数字输入
+支持整数和浮点数输入
+
+例如: 5, 3.14, -2.5
+
+错误代码和异常说明
+错误类型
+除零错误: 尝试除以零时触发
+
+栈空错误: 操作时栈中元素不足
+
+格式错误: 输入无法识别的操作符
+
+错误示例
+bash
+输入: 5 0 /
+输出: 错误: 除零错误
+
+输入: +
+输出: 错误: 栈为空
+
+输入: abc
+输出: 错误: 未知操作符 'abc'
+示例输入输出
 &quot;&quot;&quot;</span>
+
+nbCode:
+ <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;示例1: 5 5 +&quot;</span>
+ <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;输出: 结果: 10&quot;</span>
+
+ <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;示例2: 10 4 - 2 *&quot;</span>
+ <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;输出: 结果: 12&quot;</span>
+
+ <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;示例3: 1 2 + 3 + 7 7 * +&quot;</span>
+ <span class="hljs-keyword">echo</span> <span class="hljs-string">&quot;输出: 结果: 55&quot;</span>
+
+nbText: <span class="hljs-string">&quot;&quot;&quot;
+
+退出程序
+输入 q 或 quit 退出计算器
+
+注意事项
+使用空格分隔数字和操作符
+
+支持连续运算
+
+自动处理浮点数运算
+
+&quot;&quot;&quot;</span>
+
 nbSave
 </code></pre>
 </section><script>
